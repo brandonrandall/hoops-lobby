@@ -12,7 +12,16 @@ describe 'user' do
     end
 
     expect(current_path).to eq("/teams")
-    expect(page).to have_content(spurs)
-    expect(page).to have_content(celtics)
+
+    # within(:css, "conferences-container") do
+      expect(page).to have_content(spurs)
+      expect(page).to have_content(celtics)
+    #   within("western-conference") do
+    #     expect(page).to have_content(spurs)
+    #   end
+    #   within("eastern-conference") do
+          # expect(page).to have_content(celtics)
+    #   end
+    # end
+    end
   end
-end
