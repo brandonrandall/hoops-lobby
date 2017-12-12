@@ -1,0 +1,11 @@
+<link rel='stylesheet' href='home.css'/>
+
+<% @conference_results.each do |conference| %>
+  <div class="<%= conference.name %>-conf">
+    <h1><%= conference.name %></h1>
+    <% conference.conference_teams.each_with_index do |team,index| %>
+    <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %></h4>
+    <% end %>
+  </div>
+<% end %>
+</div>

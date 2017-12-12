@@ -1,0 +1,23 @@
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.western-conf {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.eastern-conf {
+  float: right;
+  width: 50%;
+  padding: 10px;
+}
