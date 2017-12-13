@@ -12,6 +12,5 @@ class TeamsController < ApplicationController
                             )
     @conference_results = data["conferenceteamstandings"]["conference"]
     .map { |conference| Conference.new(conference)}.reverse
-    @current_uri = request.env['PATH_INFO']
   end
 end

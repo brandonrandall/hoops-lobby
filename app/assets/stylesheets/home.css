@@ -1,16 +1,12 @@
 body {
   background-color: black;
   margin: 0;
+  /*background-image: url("bron.jpg");*/
 }
 
-.home-page {
+.home-page-image {
   position: relative;
   top: 10px;
   border: 2px red dashed;
-}
-
-.home-page {
-  position: relative;
-  top: 10px;
-  border: 2px red dashed;
+  background-size: auto;
 }

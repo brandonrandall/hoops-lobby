@@ -10,23 +10,37 @@
 .western-name {
   text-align: right;
   color: yellow;
-  border: 1px grey dashed;
+  border: 1px grey dotted;
   float: left;
   width: 400px;
-  padding: 100px 5px 0px 10px;
+  padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("cp3.jpg");
+  background-image: url("cp3.jpg"),
+                    url("draymond.jpg"),
+                    url("kawhi.jpg"),
+                    url("butler.jpg"),
+                    url("joker.jpg"),
+                    url("dame.jpg"),
+                    url("boogie.jpg"),
+                    url("gobert.jpg");
 }
 
 .eastern-name {
   text-align: right;
-  color: white;
+  color: maroon;
   border: 1px green dashed;
   float: right;
   width: 400px;
-  padding: 100px 5px 0px 10px;
+  padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("kyrie.jpg");
+  background-image: url("kyrie.jpg"),
+                    url("bron.jpg"),
+                    url("kyle.jpg"),
+                    url("g.jpg"),
+                    url("victor.jpg"),
+                    url("wall.jpg"),
+                    url("unicorn.jpg"),
+                    url("drummond.jpg");
 }
 
 .western-conf {

@@ -1,16 +1,14 @@
 <div>
   <ul class="nav-bar">
-    <li>
-      <div>
-        <ul class="nav-bar">
-          <li>
-            <form class="nav-button" action="/" >
-              <button type="submit" >Home</button>
-            </form>
-          </li>
-        </ul>
-      </div>
-    </li>
+    <div>
+      <ul class="nav-bar">
+        <li>
+          <form class="nav-button" action="/" >
+            <button type="submit" >Home</button>
+          </form>
+        </li>
+      </ul>
+    </div>
   </ul>
 </div>
 
@@ -18,13 +16,17 @@
   <% @conference_results.each do |conference| %>
     <div class="<%= conference.name.downcase %>-conf">
       <div class="<%= conference.name.downcase %>-name">
-        <h1><%= conference.name %></h1>
+        <h1><%= conference.name[0..3].upcase %></h1>
       </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>
         <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
         <%= team.wins %> - <%= team.losses %> <br>
-        FG %: <%= team.fg_pct %> | Fouls pg: <%= team.fouls_pg %></h4>
+        Points PG <%= team.ppg %> | FG %: <%= team.fg_pct %><br>
+        Fouls pg: <%= team.fouls_pg %> | Fouls drawn pg: <%= team.fouls_drawn_pg %><br>
+        3'S PG: <%= team.threes %> | Ast PG: <%= team.ast_pg %><br>
+        Off Reb PG: <%= team.o_reb_pg %> | Def Reb PG: <%= team.d_reb_pg %><br>
+      </h4>
         <% if index == 7 %>
         <hr>
         <% end %>
