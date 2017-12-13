@@ -1,0 +1,39 @@
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px red double;
+  position: center;
+  text: white;
+  top: 0;
+  width: auto;
+  z-index: 1;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.conferences {
+  position: relative;
+  top: 10px;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.western-conf {
+  text-align: center;
+  border: 1px green dashed;
+  float: left;
+  width: 400px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.eastern-conf {
+  text-align: center;
+  border: 1px grey dotted;
+  float: left;
+  width: 400px;
+  padding: 10px;
+}
