@@ -1,27 +1,15 @@
 <div>
   <ul class="nav-bar">
     <li>
-      <% if @current_uri == "/teams" %>
       <div>
         <ul class="nav-bar">
           <li>
             <form class="nav-button" action="/" >
-            <button type="submit" >Home</button>
+              <button type="submit" >Home</button>
             </form>
           </li>
         </ul>
       </div>
-      <% else %>
-      <div>
-        <ul class="nav-bar">
-          <li>
-            <form class="nav-button" action="/" >
-            <button type="submit" >View Teams</button>
-            </form>
-          </li>
-        </ul>
-      </div>
-      <% end %>
     </li>
   </ul>
 </div>
@@ -29,7 +17,9 @@
 <div class="conferences">
   <% @conference_results.each do |conference| %>
     <div class="<%= conference.name.downcase %>-conf">
-      <h1><%= conference.name %></h1>
+      <div class="<%= conference.name.downcase %>-name">
+        <h1><%= conference.name %></h1>
+      </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>
         <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
