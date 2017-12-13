@@ -10,7 +10,6 @@ class TeamsController < ApplicationController
                             'conference_team_standings',
                             'json'
                             )
-    # @conference_results = Conference.new(data)
     @conference_results = data["conferenceteamstandings"]["conference"]
     .map { |conference| Conference.new(conference)}
   end
