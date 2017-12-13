@@ -1,11 +1,34 @@
-<link rel='stylesheet' href='home.css'/>
+<div>
+  <ul class="nav-bar">
+    <li>
+      <div>
+        <ul class="nav-bar">
+          <li>
+            <form class="nav-button" action="/" >
+              <button type="submit" >Home</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
 
-<% @conference_results.each do |conference| %>
-  <div class="<%= conference.name %>-conf">
-    <h1><%= conference.name %></h1>
-    <% conference.conference_teams.each_with_index do |team,index| %>
-    <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %></h4>
-    <% end %>
-  </div>
-<% end %>
+<div class="conferences">
+  <% @conference_results.each do |conference| %>
+    <div class="<%= conference.name.downcase %>-conf">
+      <div class="<%= conference.name.downcase %>-name">
+        <h1><%= conference.name %></h1>
+      </div>
+      <hr>
+      <% conference.conference_teams.each_with_index do |team,index| %>
+        <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
+        <%= team.wins %> - <%= team.losses %> <br>
+        FG %: <%= team.fg_pct %> | Fouls pg: <%= team.fouls_pg %></h4>
+        <% if index == 7 %>
+        <hr>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
 </div>

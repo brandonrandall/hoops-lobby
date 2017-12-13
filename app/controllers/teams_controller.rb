@@ -10,8 +10,8 @@ class TeamsController < ApplicationController
                             'conference_team_standings',
                             'json'
                             )
-    # @conference_results = Conference.new(data)
     @conference_results = data["conferenceteamstandings"]["conference"]
-    .map { |conference| Conference.new(conference)}
+    .map { |conference| Conference.new(conference)}.reverse
+    @current_uri = request.env['PATH_INFO']
   end
 end
