@@ -1,11 +1,9 @@
 class Conference
-  attr_reader :name, :conference_teams, :east_images, :west_images
+  attr_reader :name, :conference_teams, :east_images
 
   def initialize(conference)
     @name = conference["@name"]
     @conference_teams = format_teams(conference)
-    @west_images = ["boogie.jpg","butler"]
-    @east_images = ["bron.jpg","kyrie"]
   end
 
   def format_teams(conference)

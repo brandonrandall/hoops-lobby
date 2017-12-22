@@ -10,6 +10,13 @@ class TeamsController < ApplicationController
                             'conference_team_standings',
                             'json'
                             )
+    games = msf.msf_get_data(
+                            'nba',
+                            'current',
+                            'team_gamelogs',
+                            'json'
+                            )
+                          # binding.pry
     @conference_results = data["conferenceteamstandings"]["conference"]
     .map { |conference| Conference.new(conference)}.reverse
   end

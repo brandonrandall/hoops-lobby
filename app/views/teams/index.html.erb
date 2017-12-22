@@ -20,7 +20,7 @@
       </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>
-        <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
+      <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
         <%= team.wins %> - <%= team.losses %> <br>
         Points PG <%= team.ppg %> | FG %: <%= team.fg_pct %><br>
         Fouls pg: <%= team.fouls_pg %> | Fouls drawn pg: <%= team.fouls_drawn_pg %><br>
