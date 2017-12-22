@@ -1,5 +1,5 @@
 class Conference
-  attr_reader :name, :conference_teams
+  attr_reader :name, :conference_teams, :east_images
 
   def initialize(conference)
     @name = conference["@name"]
