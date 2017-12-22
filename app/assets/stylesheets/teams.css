@@ -9,8 +9,8 @@
 
 .western-name {
   text-align: right;
-  color: yellow;
-  border: 1px grey dotted;
+  color: red;
+  border: 1px yellow dotted;
   float: left;
   width: 400px;
   padding: 150px 5px 0px 10px;
@@ -27,8 +27,8 @@
 
 .eastern-name {
   text-align: right;
-  color: maroon;
-  border: 1px green dashed;
+  color: black;
+  border: 1px white dotted;
   float: right;
   width: 400px;
   padding: 150px 5px 0px 10px;
@@ -45,7 +45,7 @@
 
 .western-conf {
   text-align: center;
-  border: 1px red dashed;
+  border: 1px grey dashed;
   float: left;
   width: 400px;
   padding: 10px;
@@ -54,7 +54,7 @@
 
 .eastern-conf {
   text-align: center;
-  border: 1px white dotted;
+  border: 1px green dashed;
   float: left;
   width: 400px;
   padding: 10px;
