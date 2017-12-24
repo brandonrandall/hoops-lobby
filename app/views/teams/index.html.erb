@@ -12,11 +12,24 @@
   </ul>
 </div>
 
+<div class="schedule">
+  <h2>Today's Games:</h2>
+  <% @games.each do |game| %>
+    <%= game.home_team %> host the <%= game.away_team %><br>
+  <% end %>
+</div>
+
 <div class="conferences">
   <% @conference_results.each do |conference| %>
     <div class="<%= conference.name.downcase %>-conf">
       <div class="<%= conference.name.downcase %>-name">
-        <h1><%= conference.name[0..3].upcase %></h1>
+        <h1><%= conference.name_upcased %></h1>
+        <%# if conference.name == "west" %>
+          <%#= image_tag ( "#{@west_random_image}") %>
+        <%# else %>
+          <%#= image_tag ( "#{@east_random_image}") %>
+        <%# end %>
+
       </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>

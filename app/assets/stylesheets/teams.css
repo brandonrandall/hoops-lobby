@@ -1,10 +1,20 @@
+.schedule {
+  position: fixed;
+  top: 25px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  color: white;
+  background-color: dodgerblue;
+}
+
 .conferences {
   position: relative;
-  top: 10px;
-  padding: 10px 0px;
+  top: 250px;
   display: flex;
   justify-content: space-around;
   color: white;
+  background-color: black;
 }
 
 .western-name {
