@@ -15,7 +15,7 @@
 <div class="schedule">
   <h2>Today's Games:</h2>
   <% @games.each do |game| %>
-    <%= game.home_team %> host the <%= game.away_team %><br>
+    <%= game.home_team %> host the <%= game.away_team %> at <%= game.time %><br>
   <% end %>
 </div>
 
