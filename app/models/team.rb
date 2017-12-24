@@ -1,4 +1,4 @@
-class Team < ApplicationRecord
+class Team 
   attr_reader :name, :abbrev, :fg_pct, :wins,
             :losses, :fouls_drawn_pg, :fouls_pg,
             :ppg, :threes, :ast_pg, :o_reb_pg, :d_reb_pg

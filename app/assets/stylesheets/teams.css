@@ -19,13 +19,13 @@
 
 .western-name {
   text-align: right;
-  color: red;
+  color: white;
   border: 1px yellow dotted;
   float: left;
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("cp3.jpg"),
+  background-image: url("/cp3.jpg"),
                     url("draymond.jpg"),
                     url("kawhi.jpg"),
                     url("butler.jpg"),
