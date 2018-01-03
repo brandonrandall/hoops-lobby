@@ -17,6 +17,7 @@ class TeamsController < ApplicationController
                             'json',
                             'date' => 'today'
                             )
+    @now = Time.now.strftime("%I:%M%p")
     @games = games["fullgameschedule"]["gameentry"]
     .map {|game| Game.new(game)}
     @conference_results = data["conferenceteamstandings"]["conference"]

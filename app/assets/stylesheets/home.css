@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
   margin: 0;
 }
 
@@ -8,5 +8,5 @@ body {
   top: 10px;
   border: 1px white dotted;
   color: white;
-  background-image: url("pop copy.jpg");
+  /* background-image: url("pop copy.jpg"); */
 }

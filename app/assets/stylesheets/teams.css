@@ -25,7 +25,7 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("/cp3.jpg"),
+  background-image: url("cp3.jpg"),
                     url("draymond.jpg"),
                     url("kawhi.jpg"),
                     url("butler.jpg"),
@@ -33,6 +33,14 @@
                     url("dame.jpg"),
                     url("boogie.jpg"),
                     url("gobert.jpg");
+}
+
+.western-name &.Mavericks {
+  background-image: url("cp3.jpg");
+}
+
+.western-name &.Nuggets {
+
 }
 
 .eastern-name {
