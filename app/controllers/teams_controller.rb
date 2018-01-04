@@ -38,7 +38,9 @@ class TeamsController < ApplicationController
                     "wall.jpg",
                     "unicorn.jpg",
                     "drummond.jpg"]
-    @west_random_image = @west_images[rand(@west_images.length)]
+
+
+    @west_random_image = @west_images[rand(@west_images.length)]    
     @east_random_image = @east_images[rand(@east_images.length)]
   end
 end
