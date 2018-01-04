@@ -1,12 +1,12 @@
 body {
-  background-color: black;
+  background-color: white;
   margin: 0;
-  /*background-image: url("bron.jpg");*/
 }
 
 .home-page-image {
   position: relative;
   top: 10px;
-  border: 2px red dashed;
-  background-size: auto;
+  border: 1px white dotted;
+  color: white;
+  background-image: url("pop copy.jpg");
 }
