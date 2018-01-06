@@ -51,7 +51,9 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("kyrie.jpg"),
+  background-image: url("/kyrie.jpg"),
+                    url("joel.jpg"),
+                    url("gor.jpg"),
                     url("bron.jpg"),
                     url("kyle.jpg"),
                     url("g.jpg"),
