@@ -32,10 +32,10 @@
         <h1><%= conference.name_upcased %></h1>
         <h1><%#= @west_random_image %></h1>
         <h1><%#= @east_random_image %></h1>
-        <%# if conference.name == "western" %>
-          <%#= image_tag ( "#{@west_random_image}") %>
+        <%# if conference.name == "eastern" %>
+          <%#= image_tag ("#{@east_random_image}") %>
         <%# else %>
-          <%#= image_tag ( "#{@east_random_image}") %>
+          <%#= image_tag ("#{@west_random_image}") %>
         <%# end %>
       </div>
       <hr>
