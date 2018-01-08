@@ -1,3 +1,8 @@
+.nav-bar {
+  position: fixed;
+  justify-content: center;
+}
+
 .schedule {
   position: fixed;
   top: 25px;
@@ -5,7 +10,8 @@
   padding: 10px;
   display: flex;
   color: white;
-  background-color: dodgerblue;
+  background-color: black;
+  justify-content: center;
 }
 
 .conferences {
