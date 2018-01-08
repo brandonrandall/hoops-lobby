@@ -22,22 +22,23 @@ class TeamsController < ApplicationController
     .map {|game| Game.new(game)}
     @conference_results = data["conferenceteamstandings"]["conference"]
     .map { |conference| Conference.new(conference)}.reverse
-    @west_images = ["cp3.jpg",
-                    "draymond.jpg",
-                    "kawhi.jpg",
-                    "butler.jpg",
-                    "joker.jpg",
-                    "dame.jpg",
-                    "boogie.jpg",
-                    "gobert.jpg"]
-    @east_images = ["kyrie.jpg",
-                    "kyle.jpg",
-                    "bron.jpg",
-                    "g.jpg",
-                    "greek_freak.jpg",
-                    "wall.jpg",
-                    "unicorn.jpg",
-                    "drummond.jpg"]
+    @west_images = ["hou_cp3.jpg",
+                    "gsw_draymond.jpg",
+                    "sas_kawhi.jpg",
+                    "min_butler.jpg",
+                    "den_joker.jpg",
+                    "por_dame.jpg",
+                    "nop_boogie.jpg",
+                    "uta_gobert.jpg"]
+    @east_images = ["bos_kyrie.jpg",
+                    "tor_kyle.jpg",
+                    "cle_bron.jpg",
+                    "mil_g.jpg",
+                    "was_wall.jpg",
+                    "nyk_unicorn.jpg",
+                    "det_drummond.jpg",
+                    "mia_gor.jpg",
+                    "phi_joel.jpg"]
     @west_random_image = @west_images[rand(@west_images.length)]
     @east_random_image = @east_images[rand(@east_images.length)]
   end

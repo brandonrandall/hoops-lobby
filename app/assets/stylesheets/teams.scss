@@ -37,22 +37,14 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  /* background-image: url("/cp3.jpg"),
-                    url("draymond.jpg"),
-                    url("kawhi.jpg"),
-                    url("butler.jpg"),
-                    url("joker.jpg"),
-                    url("dame.jpg"),
-                    url("boogie.jpg"),
-                    url("gobert.jpg"); */
-}
-
-.western-name &.Mavericks {
-  background-image: url("cp3.jpg");
-}
-
-.western-name &.Nuggets {
-
+  background-image: url("/hou_cp3.jpg"),
+                    url("gsw_draymond.jpg"),
+                    url("sas_kawhi.jpg"),
+                    url("min_butler.jpg"),
+                    url("den_joker.jpg"),
+                    url("por_dame.jpg"),
+                    url("nop_boogie.jpg"),
+                    url("uta_gobert.jpg");
 }
 
 .eastern-name {
@@ -63,19 +55,22 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  /* background-image: url("/kyrie.jpg"),
-                    url("joel.jpg"),
-                    url("gor.jpg"),
-                    url("bron.jpg"),
-                    url("kyle.jpg"),
-                    url("g.jpg"),
-                    url("victor.jpg"),
-                    url("wall.jpg"),
-                    url("unicorn.jpg"),
-                    url("drummond.jpg"); */
+  background-image: url("bos_kyrie.jpg"),
+                    url("phi_joel.jpg"),
+                    url("mia_gor.jpg"),
+                    url("cle_bron.jpg"),
+                    url("tor_kyle.jpg"),
+                    url("mil_g.jpg"),
+                    url("ind_victor.jpg"),
+                    url("was_wall.jpg"),
+                    url("nyk_unicorn.jpg"),
+                    url("det_drummond.jpg");
 }
 
 .western-conf {
+  &GSW {
+    background-image: url("draymond.jpg");
+  };
   text-align: center;
   border: 1px grey dashed;
   float: left;
@@ -96,6 +91,6 @@
 }
 
 .random-images {
-  width: 400px;
-  height: 225px;
+  width: 100px;
+  height: 125px;
 }
