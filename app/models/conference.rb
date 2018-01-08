@@ -14,6 +14,6 @@ class Conference
   end
 
   def highest_win_percentage
-    conference_teams.max { |team| (team.wins.to_i / (team.wins.to_i + team.losses.to_f)) }.name
+    conference_teams.min { |team| (team.wins.to_i / (team.wins.to_i + team.losses.to_f)) }.abbrev
   end
 end
