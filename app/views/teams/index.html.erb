@@ -12,10 +12,11 @@
   </ul>
 </div>
 
-
+<div class="today-title">
+  <h2>Today's Games:</h2><br>
+</div>
 
 <div class="schedule">
-  <h2>Today's Games:</h2>
   <% @games.each do |game| %>
     <% if game %>
       <% if game.formatted_current_time[0] <= game.formatted_game_time[0] %>
