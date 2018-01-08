@@ -34,14 +34,14 @@
   <% @conference_results.each do |conference| %>
     <div class="<%= conference.name.downcase %>-conf <%= conference.highest_win_percentage %>">
       <div class="<%= conference.name.downcase %>-name">
+        <div class="random-images">
+        <% if conference.name.downcase == "western"%>
+          <%= image_tag ("#{@west_random_image}") %>
+        <% else %>
+          <%= image_tag ("#{@east_random_image}") %>
+        <% end %>
+        </div>
         <h1><%= conference.name_upcased %></h1>
-        <h1><%#= @west_random_image %></h1>
-        <h1><%#= @east_random_image %></h1>
-        <%# if conference.name == "eastern" %>
-          <%#= image_tag ("#{@east_random_image}") %>
-        <%# else %>
-          <%#= image_tag ("#{@west_random_image}") %>
-        <%# end %>
       </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>

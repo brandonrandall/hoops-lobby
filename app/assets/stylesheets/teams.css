@@ -37,14 +37,14 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("/cp3.jpg"),
+  /* background-image: url("/cp3.jpg"),
                     url("draymond.jpg"),
                     url("kawhi.jpg"),
                     url("butler.jpg"),
                     url("joker.jpg"),
                     url("dame.jpg"),
                     url("boogie.jpg"),
-                    url("gobert.jpg");
+                    url("gobert.jpg"); */
 }
 
 .western-name &.Mavericks {
@@ -63,7 +63,7 @@
   width: 400px;
   padding: 150px 5px 0px 10px;
   justify-content: space-around;
-  background-image: url("/kyrie.jpg"),
+  /* background-image: url("/kyrie.jpg"),
                     url("joel.jpg"),
                     url("gor.jpg"),
                     url("bron.jpg"),
@@ -72,7 +72,7 @@
                     url("victor.jpg"),
                     url("wall.jpg"),
                     url("unicorn.jpg"),
-                    url("drummond.jpg");
+                    url("drummond.jpg"); */
 }
 
 .western-conf {
@@ -93,4 +93,9 @@
   padding: 10px;
   background-color: green;
 
+}
+
+.random-images {
+  width: 400px;
+  height: 225px;
 }
