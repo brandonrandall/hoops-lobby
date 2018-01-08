@@ -1,20 +1,32 @@
+.nav-bar {
+  position: fixed;
+  justify-content: center;
+}
+.today-title {
+  position: fixed;
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  top: 25px;
+}
 .schedule {
   position: fixed;
-  top: 25px;
+  top: 120px;
   width: 100%;
   padding: 10px;
   display: flex;
   color: white;
-  background-color: dodgerblue;
+  background-color: black;
+  justify-content: center;
 }
 
 .conferences {
   position: relative;
-  top: 250px;
+  top: 300px;
   display: flex;
   justify-content: space-around;
   color: white;
-  background-color: black;
 }
 
 .western-name {
@@ -70,6 +82,7 @@
   width: 400px;
   padding: 10px;
   justify-content: space-around;
+  background-color: blue;
 }
 
 .eastern-conf {
@@ -78,4 +91,6 @@
   float: left;
   width: 400px;
   padding: 10px;
+  background-color: green;
+
 }
