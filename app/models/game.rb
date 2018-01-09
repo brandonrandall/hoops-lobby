@@ -33,7 +33,6 @@ class Game
     current_time_string = separated.unshift(hours)
     if current_time_string[2] == "PM"
       current_time_string[0] = (current_time_string[0].to_i + 12)
-    elsif condition
     else
       current_time_string[0] = current_time_string[0].to_i
     end
