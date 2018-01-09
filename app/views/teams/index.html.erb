@@ -53,8 +53,15 @@
         3'S PG: <%= team.threes %> | Ast PG: <%= team.ast_pg %><br>
         Off Reb PG: <%= team.o_reb_pg %> | Def Reb PG: <%= team.d_reb_pg %><br>
       </h4>
+        <% if index == 1 %>
+          <% if conference.name.downcase == "western" %>
+            <% @west_images.each do |url| %>
+              <%= url[0..2].upcase == "#{conference.conference_teams.first.abbrev}" %>
+            <% end %>
+          <% end %>
+        <% end %>
         <% if index == 7 %>
-        <hr>
+          <hr>
         <% end %>
       <% end %>
     </div>
