@@ -46,6 +46,17 @@
       </div>
       <hr>
       <% conference.conference_teams.each_with_index do |team,index| %>
+        <% if index == 1 %>
+          <% if conference.name.downcase == "western" %>
+            <% @west_images.each do |url| %>
+              <%= image_tag (url) if url[0..2].upcase == "#{conference.conference_teams[0].abbrev}" %>
+            <% end %>
+          <% else %>
+            <% @east_images.each do |url| %>
+              <%= image_tag (url) if url[0..2].upcase == "#{conference.conference_teams[0].abbrev}" %>
+            <% end %>
+          <% end %>
+        <% end %>
       <h4><%= index + 1 %>) <%= team.abbrev %> <%= team.name %> |
         <%= team.wins %> - <%= team.losses %> <br>
         Points PG <%= team.ppg %> | FG %: <%= team.fg_pct %><br>
@@ -53,13 +64,6 @@
         3'S PG: <%= team.threes %> | Ast PG: <%= team.ast_pg %><br>
         Off Reb PG: <%= team.o_reb_pg %> | Def Reb PG: <%= team.d_reb_pg %><br>
       </h4>
-        <% if index == 1 %>
-          <% if conference.name.downcase == "western" %>
-            <% @west_images.each do |url| %>
-              <%= url[0..2].upcase == "#{conference.conference_teams.first.abbrev}" %>
-            <% end %>
-          <% end %>
-        <% end %>
         <% if index == 7 %>
           <hr>
         <% end %>
