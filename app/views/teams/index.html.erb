@@ -19,7 +19,7 @@
 <div class="schedule">
   <% @games.each do |game| %>
     <% if game %>
-      <% if game.formatted_current_time[0] <= game.formatted_game_time[0] %>
+      <% if Time.now <= Time.parse(game.game_time) %>
         <%= game.home_team %> host the <%= game.away_team %> at <%= game.game_time %><br>
       <% else %>
         game results:<br>
