@@ -1,13 +1,15 @@
-Given(/^I am on google UK$/) do
-        visit '/'
+Given(/^I am on the login page$/) do
+        visit '/login'
 end
 
-Given(/^I search for cucumber$/) do
-        fill_in 'gbqfq', :with => 'cucumber'
-        click_on 'gbqfb'
+When(/^I log in$/) do
+        fill_in 'email', :with => 'b@r.com'
+        fill_in 'password', :with => 'password'
+        click_on 'submit'
 end
 
-Then(/^I should be able to access the cucumber wiki page$/) do
-        find(:xpath, "//a[contains(.,'Cucumber - Wikipedia, the free encyclopedia')]").click
-        find('h1').text == 'Cucumber'
+Then(/^I should see "Welcome, Brandon"$/) do
+        find(:xpath, "/home").click
+        find('h1').text == 'Welcome, Brandon'
+        find(button).text == 'View Teams'
 end
