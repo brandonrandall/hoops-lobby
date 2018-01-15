@@ -30,7 +30,7 @@ class ConferencesContainer extends Component {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <ConferencesContainer eastTeams="bron" />,
+    <ConferencesContainer />,
     document.body.appendChild(document.createElement('div')),
   )
 })
