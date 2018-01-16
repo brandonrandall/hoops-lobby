@@ -6,13 +6,15 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-class WelcomeContainer extends Component {
-
+function Button() {
+  return (
+    React.createElement("button", null, "Login")
+  );
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <WelcomeContainer />,
+    <Button />,
     document.body.appendChild(document.createElement('div')),
   )
 })
