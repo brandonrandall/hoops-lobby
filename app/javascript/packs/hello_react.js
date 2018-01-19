@@ -6,18 +6,19 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-// const theEastTeams = ["bron", "g"];
-// const theWestTeams = ["draymond", "boogie"]
-
 class ConferencesContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      theEastTeams: ["bron", "g"]
+      theEastTeams: ["bron", "g"],
+      theWestTeams: ["kawhi", "draymond"]
     }
   }
   eastTeams() {
     return this.state.theEastTeams[Math.floor(Math.random()*this.state.theEastTeams.length)]
+  }
+  westTeams() {
+    return this.state.theWestTeams
   }
   render () {
     return (

@@ -6,7 +6,9 @@ body {
 .home-page-image {
   position: relative;
   top: 10px;
+  height: 870px;
+  width: 1300px;
   border: 1px white dotted;
   color: white;
-  background-image: url("pop copy.jpg");
+  background-image: url("pop.jpg");
 }
