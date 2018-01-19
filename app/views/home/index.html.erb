@@ -11,21 +11,15 @@
 <div class="home-page">
   <div class="home-page-image">
     <h1></h1><br>
-    <h1>need to fit element to size of picture</h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
-    <h1></h1><br>
+    <h1 id="home-mouse-over" onmouseover="mouseOver()"
+    onmouseout="mouseOut">超電磁砲 + 炮</h1>
+    <script>
+      function mouseOver() {
+          document.getElementById("home-mouse-over").style.color = "red";
+      }
+      function mouseOut() {
+          document.getElementById("home-mouse-over").style.color = "black";
+      }
+    </script>
   </div>
 </div>
