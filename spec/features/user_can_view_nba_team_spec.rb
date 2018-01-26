@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe 'user' do
   it 'can view nba teams' do
+    create(:user, last_name: "Doe").email
+
     spurs = "SAS Spurs"
     celtics = "BOS Celtics"
 

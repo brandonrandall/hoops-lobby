@@ -1,5 +1,5 @@
-describe "team" do
-  it "team has win streaks" do
+xdescribe "team" do
+  xit "team has win streaks" do
     rockets = Team.create(
                           name: "HOU Rockets",
                           wins: "27",
@@ -15,6 +15,6 @@ describe "team" do
     total_games.prepend(win)
     win = 1
     total_games.prepend(win)
-    
+
   end
 end

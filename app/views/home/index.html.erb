@@ -1,10 +1,18 @@
-<%= javascript_pack_tag 'hello_react' %>
+<%= javascript_pack_tag 'home_react' %>
 <div>
   <ul class="nav-bar">
     <li>
       <form class="nav-button" action="/teams" >
         <button type="submit" >View Teams</button>
       </form>
+    </li>
+    <li>
+      <% if current_user %>
+        <h4>Hello <%= current_user.username %> </h4>
+        <h4><%= link_to "Logout", new_user_path %> </h4>
+      <% else %>
+        <h4>Not a member? Click <%= link_to "Register", new_user_path %> </h4>
+      <% end %>
     </li>
   </ul>
 </div>
