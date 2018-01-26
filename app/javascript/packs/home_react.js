@@ -10,8 +10,8 @@ class ConferencesContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      theEastTeams: ["bron", "g"],
-      theWestTeams: ["kawhi", "draymond"]
+      theEastTeams: ["/images/cle_bron.jpg", "mil_g.jpg"],
+      theWestTeams: ["/images/sas_kawhi.jpg", "gsw_draymond.jpg"]
     }
   }
   eastTeams() {
